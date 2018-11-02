@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 
 <!--
-    Name: Anthony Worley
+    Creator: Anthony Worley
     Date Created: 3 Oct 2018
-    Most Recent Revision: 25 Oct 2018
+    Most Recent Revision: 1 Nov 2018
 -->
 
 <html lang="en">
     <head>
         <title>Contact Information</title>
+        <link href="styles/formStyles.css" rel="stylesheet" type="text/css" />
+        <link href="styles/GlobalStyles.css" rel="stylesheet" type="text/css" />
+        <div class="clear-float"></div>
+
         <style>
             p {
                 color:darkviolet;
@@ -22,9 +26,15 @@
     <body>
         <main>
             <header><h1>Contact Me</h1></header>
-            <hr />
-            <a href="index.html" target="_blank">Home</a>
-            <hr />
+            
+            <nav><p>
+                    <a href="index.html" target="">Home</a>
+                    <a href="about.html" target="">About Me</a>  
+                    <a href="testimonials.html" target="">Testimonials</a>
+                    <a href="projects.html" target="">Projects</a>
+                    <div class="clear-float"></div>  
+                </p></nav>
+            
         </main>
             <h2><em>Information Request</em></h2>
             <form action="submit.html" method="POST">
@@ -67,7 +77,8 @@
                     <label for="info">Additional Information</label><br />
                     <textarea id="info" name="info"></textarea><br />
                     <input type="submit" name="submit" value="Submit">
-                    <hr />
-            </form>          
+                    
+            </form>
+            <div class="clear-float"></div>            
     </body>
 </html>

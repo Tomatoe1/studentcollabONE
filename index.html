@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 
 <!--
-    Name: Anthony Worley
+    Creator: Anthony Worley
     Date Created: 30 September 2018
-    Most Recent Revision: 25 Oct 2018
+    Most Recent Revision: 1 Nov 2018
 -->
 
 <html lang="en">
 
         <head>
             <title>Anthony Worleys Portfolio</title>
+            <link href="styles/tablestyles.css" rel="stylesheet" type="text/css" />
+            <link href="styles/GlobalStyles.css" rel="stylesheet" type="text/css" />
+            <link href="styles/floatStyles.css" rel="stylesheet" type="text/css" />
             <style>
-                body {
-                    color:darkviolet;
+                caption {
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    margin-bottom: 8px;
                 }
-                li {
-                   border-bottom: 1px dashed black; 
+                table, th, td {
+                    border: 3px solid black;
+                    border-collapse: collapse;
+                    padding: 10px 10px 10px 15px;
                 }
-            </style>
+                table {
+                    width: 90%;
+                    margin: auto;
+                }
+                tr {
+                    background-color: #f2eded;
+                }
+                tfoot td {
+                    text-align: center;
+                    background-color: crimson;
+                }
+                 tbody tr:nth-child(even) {
+                    background-color: rgba(219, 6, 226, 0.397);
+                }
+                tbody tr:nth-child(odd) {
+                    background-color: #e4c3ad;
+                }
+                nav a {
+                    float: left;
+                }
+            </style> <!--Internal style elements take precedence over external style elements.-->
             
         </head>
             <body>
                 <main>
                         <header><h1>Portfolio for Anthony Worley</h1></header>
-                        <hr />
+                        
 
                         <!--
                             We need to add links to the projects.html, contact.html, and testimonials.html
@@ -33,33 +60,31 @@
                         <!--Root folder for links: /P:/Repos/Portfolio/*x*.html.-->
 
                         <nav><p> 
-                            <a href="projects.html" target="_blank">Projects</a> 
-                            <a href="contacts.html" target="_blank">Contact</a> 
-                            <a href="testimonials.html" target="_blank">Testimonials</a> 
+                            <a href="projects.html" target="">Projects</a> 
+                            <a href="contacts.html" target="">Contact</a> 
+                            <a href="testimonials.html" target="">Testimonials</a> 
+                        
+                            <!--if you want to create a link from index.html to about.html, you would simply 
+                                use the filename "about.html" because both files are in the same folder. 
+                                In that case, the link would look like:
+                            -->
+
+                            <a href="about.html" target="">About Me</a>
+                            <div class="clear-float"></div>
                         </p></nav>
 
-                                    <nav><p>
-                                        <!--if you want to create a link from index.html to about.html, you would simply 
-                                            use the filename "about.html" because both files are in the same folder. 
-                                            In that case, the link would look like:-->
+                            <!--Use <img src"images/portrait.jpg" /> to create a clickable image.
+                                target="_blank" opens link in new browser window, _self opens in same tab 
+                                and replaces the current page.
+                            -->
 
-                                        <a href="about.html" target="_blank">About Me</a>
+                        
 
-                                        <a href="target test.html" target="_blank">Target test</a>
-
-                                        <a href="https://www.google.com" target="_blank">Google</a>
-                                    </p></nav>
-
-                                    <!--Use <img src"images/portrait.jpg" /> to create a clickable image.
-                                    target="_blank" opens link in new browser window, _self opens in same tab 
-                                    and replaces the current page.-->
-                        <hr />
                             <section>
-                                <article id="about-me">
+                                <article class="border" id="about-me">
                                     <h2><em>About Me</em></h2>
 
-                                    <img src="images/current profile.jpg" alt="Photo of my face." 
-                                    style="border: thick blue solid; width: 200px;" />
+                                    <img src="images/current profile.jpg" alt="Portrait of Anthony Worley" width="250" style="float:left;" />
 
                                     <p>Decathlon champion waxy gurn ned flanders <strong>tip top</strong> old bean hair trimmer, 
                                         ned flanders cesar romero mr frothy-top mr frothy-top bogie basket challenge 
@@ -71,49 +96,58 @@
                                         to a duel tip top old bean decathlon champion ron burgundy waxy gurn alpha 
                                         trion hair trimmer brigadier?
                                     </p>  <!--Style attribute turns these two <p></p> elements to purple (dark violet)-->
+                                    <div class="clear-float"></div>
                                 </article>
 
-                                <article id="past-experiences">
+                                <article id="experience">
                                     <h2><em>Past Experiences</em></h2>
 
                                     <img src="images/Terry-Pratchett-Quote-Wisdom.jpg" alt="Photo of headphones." 
-                                    style="border: thick blue solid; width: 450px;" />
+                                    width="325px;" style="float:left;" />
+                                    <div class="right-content">
 
-                                        <table border="1" width="50%">
-                                            <caption>Employment History</caption>
+                                        <table>
+                                            <caption><strong>Employment History</strong></caption>
+                                            <thead>
                                             <tr bgcolor="palegreen">
                                                 <th>Years Employed</th>
                                                 <th>Employer</th>
                                                 <th>Title</th>
                                             </tr>
-                                            <tr>
-                                                <td>2 Oct, 2017 - 25 Nov, 2018</td>
-                                                <td>IBM</td>
-                                                <td>SORT Receive Call Agent</td>
-                                            </tr>
-                                            <tr>
-                                                <td>19 May, 2016 - 2 Oct, 2017</td>
-                                                <td>Walgreens</td>
-                                                <td>Data Terminal Repair (DTR) Field Service Technician</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5 Aug 2013 - 5 Jan, 2015</td>
-                                                <td>Alorica</td>
-                                                <td>Cust/Tech/Claims Support Specialist</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1 Apr 2012 - 30 May, 2016</td>
-                                                <td>ITT Technical Institute</td>
-                                                <td>Full Time Student: B.S. Electrical Engineering</td>
-                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2 Oct, 2017 - 25 Nov, 2018</td>
+                                                    <td>IBM</td>
+                                                    <td>SORT Receive Call Agent</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19 May, 2016 - 2 Oct, 2017</td>
+                                                    <td>Walgreens</td>
+                                                    <td>Data Terminal Repair (DTR) Field Service Technician</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5 Aug 2013 - 5 Jan, 2015</td>
+                                                    <td>Alorica</td>
+                                                    <td>Cust/Tech/Claims Support Specialist</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                    <tr>
+                                                      <td colspan="3">The Last three jobs I've Held!</td>
+                                                    </tr>
+                                                </tfoot>
                                         </table>
+                                    </div>
+                                    <div class="clear-float"></div>
+
                                 </article>
 
                                 <article id="hobbies">
                                     <h2><em>Hobbies</em></h2>
                                     <img src="images/Picture of an old desktop gaming computer.jpg" alt="Photo of an old PC." 
-                                    style="border: thick blue solid; width: 300px;" />
-
+                                    height="300px;" width="300px;" style="float:left;" />
+                                    <div class="right-center">
                                     <ul>
                                         <li>Family</li>
                                         <ol>
@@ -134,20 +168,30 @@
                                             <li>Minecraft (Building and using redstone contraptions)</li>
                                             <li>Dragon Age: Inquisition</li>
                                             <li>Skyrim Special Edition (w/MODs)</li>
-                                            <li>Fallout 4 (w/MODs</li>
+                                            <li>Fallout 4 (w/MODs)</li>
                                         </ol>
                                     </ul>
                                     <ul>
                                         
                                     </ul>
+                                    </div>
+                                    <div class="clear-float"></div>
                                 </article>
                             </section>
                         
+                            <!--Inline style elements take precedence over external style elements.-->
+                            <!--RGB(A) Values: Example: background-color:rgb(178,31,40);
+                                Example (Opacity): background-color:rgb(178,31,40,0.5);-->
+                                <!--Hexadecimal Values can also be used: #ff0000 - pure red, #b21f28 - variation on red.
+                                To make it simple, the 3 pairs of hex numbers can be written as: "background-color: #f00;", 
+                                only used when each pair repeats.-->
                         <footer>
-                            <hr />
-                            <span style="background-color: blue"><span style="color: red">
-                                &copy; 2018 Anthony Worley. All rights reserver.</span></span>
+                            <span>&copy; 2018 Anthony Worley. All rights reserver.</span></span>
                         </footer>
+                        <!--remember that the <span> element can have inline 
+                            style sets like " style="background-color: blue"><span style="color: red" "
+                            or it can be styled using a selector nested in the <head> element.
+                        -->
                 </main>
             </body>
 

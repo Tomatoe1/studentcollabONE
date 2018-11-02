@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 
 <!--
-    Name: Anthony Worley
+    Creator: Anthony Worley
     Date Created: 3 Oct 2018
-    Most Recent Revision: 25 Oct 2018
+    Most Recent Revision: 1 Nov 2018
 -->
 
 <html>
     <head>
         <title>Project Info</title> <!--In the style attribute using "#" indicates to taget an "id" value.-->
+        <link href="styles/GlobalStyles.css" rel="stylesheet" type="text/css" />
+        <div class="clear-float"></div>
         <style>
             #project1, #project3 {
                 color: blue;
@@ -21,7 +23,7 @@
                 text-decoration: none;
             }
   
-            a:hover {
+             a:hover {
                 text-decoration: underline;
             }
   
@@ -34,47 +36,61 @@
                 font-style: italic;
             }
 
-        </style>        <!--This is how the above styles work, respectively: 
-                            --The first two style sets apply to hyperlinks (using the <a> element).
-                                -In the first example, text-decoration: none; removes the default underlining 
-                                    from the hypertext.
-                                -In the section example, a: hover tells the browser to apply the style – 
-                                    in this case, to underline the text – when the user's mouse hovers 
-                                    over the hypertext.
-                            --This document contains multiple elements with the CSS class warning. 
-                                For all of these elements on the page, the text will display in red bold.
-                            --For text appearing in the div with the class of warning 
-                                (with the selector div .warning, where a space indicates that .warning is 
-                                nested inside a div), the text will display in red italics.
-                        -->
+        </style>        
+        <!--This is how the above styles work, respectively: 
+            --The first two style sets apply to hyperlinks (using the <a> element).
+                -In the first example, text-decoration: none; removes the default underlining 
+                    from the hypertext.
+                -In the section example, a: hover tells the browser to apply the style – 
+                    in this case, to underline the text – when the user's mouse hovers 
+                    over the hypertext.
+            --This document contains multiple elements with the CSS class warning. 
+                For all of these elements on the page, the text will display in red bold.
+            --For text appearing in the div with the class of warning 
+                (with the selector div .warning, where a space indicates that .warning is 
+                nested inside a div), the text will display in red italics.
+        -->
 
-                        <!--
-                            Note the following differences between internal style sheets and inline styles:
+        <!--
+            Note the following differences between internal style sheets and inline styles:
 
-                                --Pseudo-classes and pseudo-elements, such as a:hover, can be styled in internal 
-                                    style sheets, but they cannot be used in inline styles.
-                                --All other CSS selectors – including classes, IDs, ancestors/parents/children, 
-                                    and other relationships – can also be styled in internal style sheets.
-                        -->
+            --Pseudo-classes and pseudo-elements, such as a:hover, can be styled in internal 
+                style sheets, but they cannot be used in inline styles.
+            --All other CSS selectors – including classes, IDs, ancestors/parents/children, 
+                and other relationships – can also be styled in internal style sheets.
+        -->
     </head>
+
+    
 
     <body>
         <main>
             <header><h1>Projects</h1></header>
+
+            <nav><p> 
+                    <a href="index.html" target="">Home</a>
+                    <a href="contacts.html" target="">Contact</a> 
+                    <a href="testimonials.html" target="">Testimonials</a>
+                    <a href="about.html" target="">About Me</a> 
+                    <div class="clear-float"></div>  
+                </p></nav>
+
             <div id="project1"> 
                 <h2>Awesome Project</h2> 
                 <p>Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette penne. 
                     Tuffoli pastina farfalline linguine campanelle garganelli lagane scialatelli 
                     pappardelle elicoidali ditalini. Quadrefiore orecchiette croxetti spiralini 
                     strozzapreti garganelli fettucelle. </p> 
-            </div> 
+            </div>
+            <div class="clear-float"></div> 
             <div id="project2"> 
                 <h2>More Awesome Project</h2> 
                 <p>Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette penne. 
                     Tuffoli pastina farfalline linguine campanelle garganelli lagane scialatelli 
                     pappardelle elicoidali ditalini. Quadrefiore orecchiette croxetti spiralini 
                     strozzapreti garganelli fettucelle. </p> 
-            </div> 
+            </div>
+            <div class="clear-float"></div> 
             <div id="project3"> 
                 <h2>Most Awesome Project</h2> 
                 <p>Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette penne. 
@@ -82,6 +98,7 @@
                     pappardelle elicoidali ditalini. Quadrefiore orecchiette croxetti spiralini 
                     strozzapreti garganelli fettucelle. </p> 
             </div>
+            <div class="clear-float"></div>  
         </main>
     </body>
 </html>

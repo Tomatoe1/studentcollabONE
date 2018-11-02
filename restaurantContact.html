@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<!--
+    Creator: Anthony Worley
+    Date Created: 1 Nov 2018
+    Most Recent Revision: 1 Nov 2018
+-->
+
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Restaurant Sample Page</title>
+        
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+       
+                <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+                <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+                <style>
+                    header, footer {
+                        background-color: #5b7d87;
+                        color: #000000;
+                        height: 100px;
+                        text-align: center;
+                        padding: 30px 10px 20px 10px;
+                    }
+                    form {
+                        text-align: center;
+                        padding: 30px 10px 20px 10px;
+                    }
+                </style>
+
+                <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+                <link rel="apple-touch-icon" href="images/icon.png">
+
+	</head>
+	<body>
+                
+
+                <div class="container">
+                <header class="jumbotron">
+                                <h1 style="text-align: center">Classic Star</h1>
+                                <h2 class="font-talic" style="text-align: center"></h2>
+                                <h3 class="text-center mt-5"></h3>
+                        </header>
+
+                        <nav>
+                                <a class="btn badge-pill" href="bootstrap_examples.html" target="">Home</a>
+                                <a class="btn badge-pill" href="restaurantMenu.html" target="">Menu</a>
+                                <a class="btn badge-pill" href="restaurantContact.html" target="">Contact Us</a>
+                        </nav>
+
+                        <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <h4><em>Information Request</em></h4>
+                                    <form action="submit.html" method="POST">
+                                        <p style="color:red;font-weight:bold;">  <!--CSS Declaration: property (color:), value (red;)-->
+                                                These fields are required.        <!--CSS Value: the property the declaration applies to.-->
+                                                </p>
+                                    <label for="firstName">Name:</label><br />
+                                    <input type="text" id="Name" name="Name"><br />
+                                    <label for="phone">Email:</label><br />
+                                    <input type="text" id="email" name="email"><br />
+                                    <label for="phone">Phone Number:</label><br />
+                                    <input type="text" id="phone" name="phone"><br />
+                                    <label for="contact">Reason for Inquiry:</label><br />
+                                    <select id="reason" name="reason">
+                                            <option value="default" selected>--Select One--</option>
+                                            <option value="catering (Default)">Catering</option>
+                                            <option value="private">Private Party</option>
+                                            <option value="feedback">feedback</option>
+                                            <option value="other">Other</option>
+                                    </select>
+                                    <fieldset>
+                                        <label for="info">Additional Information</label><br />
+                                        <textarea id="info" name="info"></textarea><br />
+                                        
+                                    </fieldset>
+                                    <label for="contact">Best days to contact you:</label><br />
+                                    <select id="reason" name="reason">
+                                            <option value="default" selected>--Select One--</option>
+                                            <option value="monday">Monday</option>
+                                            <option value="tuesday">Tuesday</option>
+                                            <option value="wednesday">Wednesday</option>
+                                            <option value="thursday">Thursday</option>
+                                            <option value="friday">Friday</option>
+                                        </select>
+                                    <fieldset>
+                                            <legend>Have you been to the restaurant?:</legend><br />
+                                            <input type="radio" id="choice1" name="questionnaire" value="yes">
+                                            <label for="choice1">Yes</label><br />
+                                            <input type="radio" id="choice2" name="questionnaire" value="no">
+                                            <label for="choice2">No</label><br />
+                                    </fieldset>
+                                        
+                                        <input type="submit" name="submit" value="Submit">
+                                        
+                                    </form> 
+                                         
+                                </div>
+                                
+                                
+                        </div>
+                <footer class="jumbotron">
+                    <h4 style="text-align: center">4068 Glendale Avenue, Woodland Hills, CA, 91303</h4>
+                    <h5 style="text-align: center">123-555-4567</h5>
+                </footer>
+
+                </div>
+	
+	<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        
+                <script src="js/jquery-3.3.1.min.js"></script>
+                <script src="js/popper.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
